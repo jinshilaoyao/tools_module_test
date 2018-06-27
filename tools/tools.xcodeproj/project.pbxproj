@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		306886DD20E360D300C26345 /* ModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = 306886DC20E360D300C26345 /* ModuleA.m */; };
+		306886E120E365EB00C26345 /* RouteManager+ModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = 306886E020E365EB00C26345 /* RouteManager+ModuleA.m */; };
+		306886E520E3664800C26345 /* MGJRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 306886E420E3664800C26345 /* MGJRouter.m */; };
+		306886E820E368F400C26345 /* YYBHModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 306886E720E368F400C26345 /* YYBHModuleManager.m */; };
 		30B9792F20E1DC84001224DC /* YYBeeHive.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B9792E20E1DC84001224DC /* YYBeeHive.m */; };
 		30B9793220E1DCF9001224DC /* YYBHServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B9793120E1DCF9001224DC /* YYBHServiceManager.m */; };
 		30B9796A20E20A0F001224DC /* YYBHContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B9796920E20A0F001224DC /* YYBHContext.m */; };
@@ -42,6 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		306886DB20E360D300C26345 /* ModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleA.h; sourceTree = "<group>"; };
+		306886DC20E360D300C26345 /* ModuleA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleA.m; sourceTree = "<group>"; };
+		306886DF20E365EB00C26345 /* RouteManager+ModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RouteManager+ModuleA.h"; sourceTree = "<group>"; };
+		306886E020E365EB00C26345 /* RouteManager+ModuleA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RouteManager+ModuleA.m"; sourceTree = "<group>"; };
+		306886E320E3664800C26345 /* MGJRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGJRouter.h; sourceTree = "<group>"; };
+		306886E420E3664800C26345 /* MGJRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGJRouter.m; sourceTree = "<group>"; };
+		306886E620E368F400C26345 /* YYBHModuleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYBHModuleManager.h; sourceTree = "<group>"; };
+		306886E720E368F400C26345 /* YYBHModuleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYBHModuleManager.m; sourceTree = "<group>"; };
 		30B9792D20E1DC84001224DC /* YYBeeHive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYBeeHive.h; sourceTree = "<group>"; };
 		30B9792E20E1DC84001224DC /* YYBeeHive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYBeeHive.m; sourceTree = "<group>"; };
 		30B9793020E1DCF9001224DC /* YYBHServiceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYBHServiceManager.h; sourceTree = "<group>"; };
@@ -102,6 +114,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		306886DA20E360B800C26345 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				306886DB20E360D300C26345 /* ModuleA.h */,
+				306886DC20E360D300C26345 /* ModuleA.m */,
+				306886DF20E365EB00C26345 /* RouteManager+ModuleA.h */,
+				306886E020E365EB00C26345 /* RouteManager+ModuleA.m */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		306886E220E3664800C26345 /* MGJRouter */ = {
+			isa = PBXGroup;
+			children = (
+				306886E320E3664800C26345 /* MGJRouter.h */,
+				306886E420E3664800C26345 /* MGJRouter.m */,
+			);
+			path = MGJRouter;
+			sourceTree = "<group>";
+		};
 		30B9792C20E1DC75001224DC /* Bee */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +146,8 @@
 				30B9796920E20A0F001224DC /* YYBHContext.m */,
 				30B9797220E22F47001224DC /* YYBHModuleProtocol.h */,
 				30B9797320E22FEB001224DC /* YYBHServiceProtocol.h */,
+				306886E620E368F400C26345 /* YYBHModuleManager.h */,
+				306886E720E368F400C26345 /* YYBHModuleManager.m */,
 			);
 			path = Bee;
 			sourceTree = "<group>";
@@ -129,6 +163,7 @@
 		30B9796D20E22D17001224DC /* ModuleA */ = {
 			isa = PBXGroup;
 			children = (
+				306886DA20E360B800C26345 /* Module */,
 				30B9797820E23375001224DC /* service */,
 				30B9796E20E22D2F001224DC /* business */,
 			);
@@ -189,6 +224,7 @@
 				30B9797420E2334C001224DC /* Base */,
 				30B9796D20E22D17001224DC /* ModuleA */,
 				30B9792C20E1DC75001224DC /* Bee */,
+				306886E220E3664800C26345 /* MGJRouter */,
 				30FEC37C20DCD20A00E28B10 /* AppDelegate.h */,
 				30FEC37D20DCD20A00E28B10 /* AppDelegate.m */,
 				30FEC37F20DCD20A00E28B10 /* ViewController.h */,
@@ -355,15 +391,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306886E120E365EB00C26345 /* RouteManager+ModuleA.m in Sources */,
 				30B9792F20E1DC84001224DC /* YYBeeHive.m in Sources */,
 				30B9796A20E20A0F001224DC /* YYBHContext.m in Sources */,
 				30FEC38120DCD20A00E28B10 /* ViewController.m in Sources */,
 				30B9793220E1DCF9001224DC /* YYBHServiceManager.m in Sources */,
 				30B9797720E23371001224DC /* AppUISkeletonServiceImpl.m in Sources */,
 				30FEC38C20DCD20A00E28B10 /* main.m in Sources */,
+				306886E820E368F400C26345 /* YYBHModuleManager.m in Sources */,
 				30B9797120E22D52001224DC /* HomeViewController.m in Sources */,
 				30B9797B20E23DB4001224DC /* RouteManager.m in Sources */,
+				306886E520E3664800C26345 /* MGJRouter.m in Sources */,
 				30FEC37E20DCD20A00E28B10 /* AppDelegate.m in Sources */,
+				306886DD20E360D300C26345 /* ModuleA.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

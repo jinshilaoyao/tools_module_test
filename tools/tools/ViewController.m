@@ -7,9 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "HomeViewController.h"
-#import "YYBeeHive.h"
-#import "AppUISkeletonServiceProtocol.h"
+#import "RouteManager.h"
 @interface ViewController ()
 
 @end
@@ -25,7 +23,7 @@
 //    UIViewController * mainViewController = [skeletonService mainViewController];
 //    [self.navigationController pushViewController:mainViewController animated:YES];
     
-    
+    [MGJRouter openURL:kRoutePageHome];
     
 }
 - (IBAction)touchB {

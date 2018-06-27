@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+#import "MGJRouter.h"
 static NSString *const kRoutePageHome = @"ms://home";
 static NSString *const kRoutePageB = @"ms://pageB";
 static NSString *const kRoutePageB1 = @"ms://pageB1";

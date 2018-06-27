@@ -7,7 +7,7 @@
 //
 
 #import "YYBeeHive.h"
-
+#import "YYBHModuleManager.h"
 @implementation YYBeeHive
 + (instancetype)shareInstance {
     static dispatch_once_t p;
@@ -40,6 +40,10 @@
     
     [[YYBHServiceManager sharedManager] registerLocalServices];
     
+}
+
++ (void)registerDynamicModule:(Class) moduleClass {
+    [[YYBHModuleManager sharedManager] registerDynamicModule:moduleClass];
 }
 
 @end

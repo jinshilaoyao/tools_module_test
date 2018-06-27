@@ -14,5 +14,9 @@
 @property(nonatomic, strong) YYBHContext *context;
 + (instancetype)shareInstance;
 
++ (void)registerDynamicModule:(Class) moduleClass;
+
 - (id)createService:(Protocol *)proto;
+
+
 @end

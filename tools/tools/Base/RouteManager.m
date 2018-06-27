@@ -35,7 +35,7 @@
     if (![url.scheme isEqualToString:@"ms"]) {
         return;
     }
-//    [MGJRouter openURL:[url absoluteString]];
+    [MGJRouter openURL:[url absoluteString]];
 }
 
 @end

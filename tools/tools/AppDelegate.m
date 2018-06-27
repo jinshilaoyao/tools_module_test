@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "YYBeeHive.h"
 #import "AppUISkeletonServiceProtocol.h"
+#import "YYBHModuleManager.h"
 @interface AppDelegate ()
 
 @end
@@ -20,6 +21,9 @@
     // Override point for customization after application launch.
     [[YYBeeHive shareInstance] setContext:[YYBHContext shareInstance]];
 //    [self setipMainWindow];
+    
+    [[YYBHModuleManager sharedManager] triggerEvent:YYBHMSetupEvent];
+    [[YYBHModuleManager sharedManager] triggerEvent:YYBHMInitEvent];
     
     return YES;
 }
