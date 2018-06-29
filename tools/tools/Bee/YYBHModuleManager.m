@@ -82,8 +82,23 @@ static  NSString *kInitSelector = @"modInit:";
 //
 //- (void)loadLocalModules;
 //
-//- (void)registedAllModules;
-//
+- (void)registedAllModules {
+    NSMutableArray *tmpArray = [NSMutableArray array];
+    [self.BHModules enumerateObjectsUsingBlock:^(NSDictionary * module, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSString * classStr = [module objectForKey:kModuleInfoNameKey];
+        
+        Class moduleClass = NSClassFromString(classStr);
+        
+        if (NSStringFromClass(moduleClass)) {
+            id<YYBHModuleProtocol> moduleInstance = [[moduleClass alloc] init];
+            [tmpArray addObject:moduleInstance];
+        }
+    }];
+    
+    [self.BHModules removeAllObjects];
+    [self.BHModules addObjectsFromArray:tmpArray];
+}
+
 - (void)triggerEvent:(YYBHModuleEventType)eventType {
     switch (eventType) {
         case YYBHMSetupEvent:

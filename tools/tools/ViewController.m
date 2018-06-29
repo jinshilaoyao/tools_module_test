@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "RouteManager.h"
+#import "LCSPhotoShareServiceProtocol.h"
+#import "YYBeeHive.h"
 @interface ViewController ()
 
 @end
@@ -19,26 +21,20 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 - (IBAction)touchA {
-//    id<AppUISkeletonServiceProtocol> skeletonService = [[YYBeeHive shareInstance] createService:@protocol(AppUISkeletonServiceProtocol)];
-//    UIViewController * mainViewController = [skeletonService mainViewController];
-//    [self.navigationController pushViewController:mainViewController animated:YES];
-    
     [MGJRouter openURL:kRoutePageHome];
-    
 }
 - (IBAction)touchB {
-//    [self.navigationController pushViewController:[BViewController new] animated:YES];
+    UIImage * image = [UIImage imageNamed:@"asefa"];
+    NSData * data = [[NSData alloc] init];
+    NSDictionary * dict = @{@"model":data};
+    [MGJRouter openURL:kRoutePageStockGod withUserInfo:dict completion:^(id result) {
+        
+    }];
 }
 
 - (IBAction)touchC {
-//    [self.navigationController pushViewController:[CViewController new] animated:YES];
+    id<LCSPhotoShareServiceProtocol> shareService = [[YYBeeHive shareInstance] createService:@protocol(LCSPhotoShareServiceProtocol)];
+    [shareService photoShareWithType:(PhotoShareType_A) andChannel:(PhotoShareChannel_WB)];
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end

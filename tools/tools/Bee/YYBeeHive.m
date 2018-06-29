@@ -7,7 +7,7 @@
 //
 
 #import "YYBeeHive.h"
-#import "YYBHModuleManager.h"
+
 @implementation YYBeeHive
 + (instancetype)shareInstance {
     static dispatch_once_t p;
@@ -30,10 +30,17 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [self loadStaticServices];
-//        [self loadStaticModules];
+        [self loadStaticModules];
     });
 }
-
+- (void)loadStaticModules
+{
+    
+//    [[YYBHModuleManager sharedManager] loadLocalModules];
+    
+    [[YYBHModuleManager sharedManager] registedAllModules];
+    
+}
 -(void)loadStaticServices
 {
 //    [BHServiceManager sharedManager].enableException = self.enableException;

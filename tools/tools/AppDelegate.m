@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "YYBeeHive.h"
 #import "AppUISkeletonServiceProtocol.h"
+#import "LCSStockGodServiceProtocol.h"
 #import "YYBHModuleManager.h"
 @interface AppDelegate ()
 
@@ -29,8 +30,11 @@
 }
 
 - (void)setipMainWindow {
-    id<AppUISkeletonServiceProtocol> skeletonService = [[YYBeeHive shareInstance] createService:@protocol(AppUISkeletonServiceProtocol)];
-    UIViewController * mainViewController = [skeletonService mainViewController];
+//    id<AppUISkeletonServiceProtocol> skeletonService = [[YYBeeHive shareInstance] createService:@protocol(AppUISkeletonServiceProtocol)];
+//    UIViewController * mainViewController = [skeletonService mainViewController];
+    
+    id<LCSStockGodServiceProtocol> stockGodService = [[YYBeeHive shareInstance] createService:@protocol(LCSStockGodServiceProtocol)];
+    UIViewController * mainViewController = [stockGodService mainViewController];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:(UIViewController *)mainViewController];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = navigationController;

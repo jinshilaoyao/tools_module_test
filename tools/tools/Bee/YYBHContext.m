@@ -50,4 +50,8 @@
     return [[YYBHContext shareInstance].servicesByName objectForKey:serviceName];
 }
 
+- (void)addServiceWithImplInstance:(id)implInstance serviceName:(NSString *)serviceName {
+    [[YYBHContext shareInstance].servicesByName setObject:implInstance forKey:serviceName];
+}
+
 @end

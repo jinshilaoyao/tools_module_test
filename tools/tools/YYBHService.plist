@@ -8,5 +8,17 @@
 		<key>service</key>
 		<string>AppUISkeletonServiceProtocol</string>
 	</dict>
+	<dict>
+		<key>impl</key>
+		<string>LCSStockGodServiceImpl</string>
+		<key>service</key>
+		<string>LCSStockGodServiceProtocol</string>
+	</dict>
+	<dict>
+		<key>impl</key>
+		<string>LCSPhotoShareServiceImpl</string>
+		<key>service</key>
+		<string>LCSPhotoShareServiceProtocol</string>
+	</dict>
 </array>
 </plist>

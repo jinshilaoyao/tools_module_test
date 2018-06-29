@@ -12,6 +12,8 @@
 static NSString *const kRoutePageHome = @"ms://home";
 static NSString *const kRoutePageB = @"ms://pageB";
 static NSString *const kRoutePageB1 = @"ms://pageB1";
+static NSString *const kRoutePageStockGod = @"ms://stockGod?stock_id=12345";
+static NSString *const kRoutePageStockGodRank = @"ms://stockGodRank";
 @interface RouteManager : NSObject
 + (instancetype)shareInstance;
 

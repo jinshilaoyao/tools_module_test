@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "YYBHServiceManager.h"
+#import "YYBHModuleManager.h"
+#import "YYBHModuleProtocol.h"
+#import "YYBHServiceProtocol.h"
 #import "YYBHContext.h"
 @interface YYBeeHive : NSObject
 
