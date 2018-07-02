@@ -8,10 +8,8 @@
 
 #import "ViewController.h"
 #import "RouteManager.h"
-#import "LCSPhotoShareServiceProtocol.h"
-#import "YYBeeHive.h"
 @interface ViewController ()
-
+@property (weak, nonatomic) UIViewController * sourceVC;
 @end
 
 @implementation ViewController
@@ -19,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.sourceVC = self;
 }
 - (IBAction)touchA {
     [MGJRouter openURL:kRoutePageHome];
@@ -33,8 +32,12 @@
 }
 
 - (IBAction)touchC {
-    id<LCSPhotoShareServiceProtocol> shareService = [[YYBeeHive shareInstance] createService:@protocol(LCSPhotoShareServiceProtocol)];
-    [shareService photoShareWithType:(PhotoShareType_A) andChannel:(PhotoShareChannel_WB)];
+//    id<LCSPhotoShareServiceProtocol> shareService = [[YYBeeHive shareInstance] createService:@protocol(LCSPhotoShareServiceProtocol)];
+//    [shareService photoShareWithType:(PhotoShareType_A) andChannel:(PhotoShareChannel_WB)];
+    
+    [MGJRouter openURL:kRoutePhotoShare withUserInfo:@{@"planner":@"123",@"planner_image":@"plannerIcon",@"source":self.sourceVC} completion:^(id result) {
+        
+    }];
 }
 
 @end

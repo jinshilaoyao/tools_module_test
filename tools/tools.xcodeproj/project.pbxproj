@@ -11,6 +11,7 @@
 		3006466720E4849E0070B13D /* RouteManager+StockGod.m in Sources */ = {isa = PBXBuildFile; fileRef = 3006466620E4849E0070B13D /* RouteManager+StockGod.m */; };
 		3006467520E4DB3C0070B13D /* StockGodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3006467420E4DB3C0070B13D /* StockGodViewController.m */; };
 		3006468520E4F2420070B13D /* StockGodRankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3006468420E4F2420070B13D /* StockGodRankViewController.m */; };
+		303FA14A20E8C2DF00AC1F46 /* RouteManager+PhotoShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 303FA14920E8C2DF00AC1F46 /* RouteManager+PhotoShare.m */; };
 		306886DD20E360D300C26345 /* ModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = 306886DC20E360D300C26345 /* ModuleA.m */; };
 		306886E120E365EB00C26345 /* RouteManager+ModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = 306886E020E365EB00C26345 /* RouteManager+ModuleA.m */; };
 		306886E520E3664800C26345 /* MGJRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 306886E420E3664800C26345 /* MGJRouter.m */; };
@@ -62,6 +63,8 @@
 		3006467420E4DB3C0070B13D /* StockGodViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockGodViewController.m; sourceTree = "<group>"; };
 		3006468320E4F2420070B13D /* StockGodRankViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockGodRankViewController.h; sourceTree = "<group>"; };
 		3006468420E4F2420070B13D /* StockGodRankViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockGodRankViewController.m; sourceTree = "<group>"; };
+		303FA14820E8C2DF00AC1F46 /* RouteManager+PhotoShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RouteManager+PhotoShare.h"; sourceTree = "<group>"; };
+		303FA14920E8C2DF00AC1F46 /* RouteManager+PhotoShare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RouteManager+PhotoShare.m"; sourceTree = "<group>"; };
 		306886DB20E360D300C26345 /* ModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleA.h; sourceTree = "<group>"; };
 		306886DC20E360D300C26345 /* ModuleA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleA.m; sourceTree = "<group>"; };
 		306886DF20E365EB00C26345 /* RouteManager+ModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RouteManager+ModuleA.h"; sourceTree = "<group>"; };
@@ -225,6 +228,8 @@
 			children = (
 				307B142720E60ECB007FD1EE /* PhotoShareModule.h */,
 				307B142820E60ECB007FD1EE /* PhotoShareModule.m */,
+				303FA14820E8C2DF00AC1F46 /* RouteManager+PhotoShare.h */,
+				303FA14920E8C2DF00AC1F46 /* RouteManager+PhotoShare.m */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -503,6 +508,7 @@
 				306886E120E365EB00C26345 /* RouteManager+ModuleA.m in Sources */,
 				30B9792F20E1DC84001224DC /* YYBeeHive.m in Sources */,
 				3006466720E4849E0070B13D /* RouteManager+StockGod.m in Sources */,
+				303FA14A20E8C2DF00AC1F46 /* RouteManager+PhotoShare.m in Sources */,
 				3006468520E4F2420070B13D /* StockGodRankViewController.m in Sources */,
 				307B142C20E60F16007FD1EE /* PhotoShareViewController.m in Sources */,
 				30B9796A20E20A0F001224DC /* YYBHContext.m in Sources */,
