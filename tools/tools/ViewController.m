@@ -18,6 +18,32 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.sourceVC = self;
+    
+    
+    NSArray * array = @[@(-1),@0,@1,@2,@3,@4,@5,@6,@7,@8,@9];
+    NSNumber * num = @7;
+    
+    int start = 0;
+    int end = array.count - 1;
+    int mid = 0;
+    
+    while (start < (end -1) ) {
+        mid = start + (end-start)/2;
+        
+        if (array[mid] > num) {
+            end = mid;
+        } else {
+            start = mid;
+        }
+    }
+    
+    if (array[start] == num) {
+        NSLog(@"%ld",start);
+    }
+    if (array[end] == num) {
+        NSLog(@"%ld",end);
+    }
+    
 }
 - (IBAction)touchA {
     [MGJRouter openURL:kRoutePageHome];
