@@ -9,9 +9,9 @@
 #import "StockGodModule.h"
 #import "RouteManager+StockGod.h"
 #import "YYBeeHive.h"
-
+#import "StockGodManager.h"
 @interface StockGodModule()<YYBHModuleProtocol>
-
+@property (nonatomic, strong) StockGodManager * stockGodManager;
 @end
 
 @implementation StockGodModule
@@ -25,7 +25,17 @@
 }
 
 - (void)modInit:(YYBHContext *)context {
-    
+//    self.stockGodManager = [StockGodManager new];
+}
+- (void)modDidEnterBackground:(YYBHContext *)context {
+//    [self.stockGodManager stop];
 }
 
+- (void)modWillEnterForeground:(YYBHContext *)context {
+//    [self.stockGodManager start];
+}
+
+- (void)modDidRegisterForRemoteNotifications:(YYBHContext *)context {
+    
+}
 @end

@@ -16,7 +16,9 @@
 
 static  NSString *kSetupSelector = @"modSetUp:";
 static  NSString *kInitSelector = @"modInit:";
-
+static  NSString *kDidRegisterForRemoteNotificationsSelector = @"modDidRegisterForRemoteNotifications:";
+static  NSString *kDidEnterBackgroundSelector = @"modDidEnterBackground:";
+static  NSString *kWillEnterForegroundSelector = @"modWillEnterForeground:";
 @interface YYBHModuleManager()
 @property(nonatomic, strong) NSMutableArray     *BHModuleDynamicClasses;
 
@@ -106,6 +108,15 @@ static  NSString *kInitSelector = @"modInit:";
             break;
         case YYBHMInitEvent:
             [self handleModulesInitEvent];
+            break;
+        case YYBHMDidReceiveLocalNotificationEvent:
+            [self handleModuleEvent:kDidRegisterForRemoteNotificationsSelector];
+            break;
+        case YYBHMDidEnterBackgroundEvent:
+            [self handleModuleEvent:kDidEnterBackgroundSelector];
+            break;
+        case YYBHMWillEnterForegroundEvent:
+            [self handleModuleEvent:kWillEnterForegroundSelector];
             break;
     }
 }

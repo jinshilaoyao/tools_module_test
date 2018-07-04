@@ -21,7 +21,11 @@
 
 - (void)modInit:(YYBHContext *)context;
 
+- (void)modDidEnterBackground:(YYBHContext *)context;
 
+- (void)modWillEnterForeground:(YYBHContext *)context;
+
+- (void)modDidRegisterForRemoteNotifications:(YYBHContext *)context;
 @end
 
 

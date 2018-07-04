@@ -20,6 +20,7 @@
 		307B142920E60ECB007FD1EE /* PhotoShareModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 307B142820E60ECB007FD1EE /* PhotoShareModule.m */; };
 		307B142C20E60F16007FD1EE /* PhotoShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307B142B20E60F16007FD1EE /* PhotoShareViewController.m */; };
 		307B143020E611E6007FD1EE /* LCSPhotoShareServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 307B142F20E611E6007FD1EE /* LCSPhotoShareServiceImpl.m */; };
+		30A3D36220EA181A002705ED /* StockGodManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A3D36120EA181A002705ED /* StockGodManager.m */; };
 		30B9792F20E1DC84001224DC /* YYBeeHive.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B9792E20E1DC84001224DC /* YYBeeHive.m */; };
 		30B9793220E1DCF9001224DC /* YYBHServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B9793120E1DCF9001224DC /* YYBHServiceManager.m */; };
 		30B9796A20E20A0F001224DC /* YYBHContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B9796920E20A0F001224DC /* YYBHContext.m */; };
@@ -83,6 +84,8 @@
 		307B142D20E6101B007FD1EE /* LCSPhotoShareServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCSPhotoShareServiceProtocol.h; sourceTree = "<group>"; };
 		307B142E20E611E6007FD1EE /* LCSPhotoShareServiceImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCSPhotoShareServiceImpl.h; sourceTree = "<group>"; };
 		307B142F20E611E6007FD1EE /* LCSPhotoShareServiceImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCSPhotoShareServiceImpl.m; sourceTree = "<group>"; };
+		30A3D36020EA181A002705ED /* StockGodManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockGodManager.h; sourceTree = "<group>"; };
+		30A3D36120EA181A002705ED /* StockGodManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockGodManager.m; sourceTree = "<group>"; };
 		30B9792D20E1DC84001224DC /* YYBeeHive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYBeeHive.h; sourceTree = "<group>"; };
 		30B9792E20E1DC84001224DC /* YYBeeHive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYBeeHive.m; sourceTree = "<group>"; };
 		30B9793020E1DCF9001224DC /* YYBHServiceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYBHServiceManager.h; sourceTree = "<group>"; };
@@ -167,6 +170,7 @@
 		3006465C20E4843B0070B13D /* service */ = {
 			isa = PBXGroup;
 			children = (
+				30A3D35F20EA180A002705ED /* Manager */,
 				307B141C20E5D193007FD1EE /* LCSStockGodServiceImpl.h */,
 				307B141D20E5D193007FD1EE /* LCSStockGodServiceImpl.m */,
 			);
@@ -241,6 +245,15 @@
 				307B142F20E611E6007FD1EE /* LCSPhotoShareServiceImpl.m */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		30A3D35F20EA180A002705ED /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				30A3D36020EA181A002705ED /* StockGodManager.h */,
+				30A3D36120EA181A002705ED /* StockGodManager.m */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		30B9792C20E1DC75001224DC /* Bee */ = {
@@ -522,6 +535,7 @@
 				307B142920E60ECB007FD1EE /* PhotoShareModule.m in Sources */,
 				30B9797120E22D52001224DC /* HomeViewController.m in Sources */,
 				307B143020E611E6007FD1EE /* LCSPhotoShareServiceImpl.m in Sources */,
+				30A3D36220EA181A002705ED /* StockGodManager.m in Sources */,
 				30B9797B20E23DB4001224DC /* RouteManager.m in Sources */,
 				306886E520E3664800C26345 /* MGJRouter.m in Sources */,
 				30FEC37E20DCD20A00E28B10 /* AppDelegate.m in Sources */,

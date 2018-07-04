@@ -10,7 +10,12 @@
 typedef NS_ENUM(NSInteger, YYBHModuleEventType)
 {
     YYBHMSetupEvent = 0,
-    YYBHMInitEvent
+    YYBHMInitEvent,
+    YYBHMDidRegisterForRemoteNotificationsEvent,
+    YYBHMDidReceiveRemoteNotificationEvent,
+    YYBHMDidReceiveLocalNotificationEvent,
+    YYBHMDidEnterBackgroundEvent,
+    YYBHMWillEnterForegroundEvent
 };
 @interface YYBHModuleManager : NSObject
 + (instancetype)sharedManager;

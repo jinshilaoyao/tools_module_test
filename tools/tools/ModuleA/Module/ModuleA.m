@@ -29,4 +29,8 @@
     
 }
 
+- (void)modWillEnterForeground:(YYBHContext *)context {
+    
+}
+
 @end
